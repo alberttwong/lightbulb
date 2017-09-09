@@ -20,7 +20,7 @@ To set up the lab for Ansible training, follow these steps.
 
 1. Create an Amazon AWS account.
 
-2. Create an ssh key pair called 'ansible' (Network & Security->Key Pairs->Create Key Pair). Download the private key to your `.ssh` directory, e.g. to `.ssh/ansible.pem`. Alternatively, you can upload your own public key into AWS.
+2. Create an ssh key pair called 'ansible' (My Security Credentials->Network & Security->Key Pairs->Create Key Pair). Download the private key to your `.ssh` directory, e.g. to `.ssh/ansible.pem`. Alternatively, you can upload your own public key into AWS.
 
       If using an AWS generated key add it to the ssh-agent:
 
@@ -111,4 +111,4 @@ To destroy all the EC2 instaances after training is complete:
 
 1. Run the playbook:
 
-        ansible-playbook teardown_lab.yml -e @extra_vars.yml
+        ansible-playbook teardown_lab.yml -e @extra_vars.yml -e @users.yml
