@@ -77,6 +77,7 @@ To set up the lab for Ansible training, follow these steps.
       sendgrid_api_key: 'APIkey'            # Instead of username and password, you may use an API key. Don't define both.
       instructor_email: 'Ansible Instructor <helloworld@acme.com>'  # address you want the emails to arrive from
       admin_password: changeme123           # Set this to something better if you'd like. Defaults to 'LearnAnsible[two digit month][two digit year]', e.g., LearnAnsible0416
+      email: yes
       ```
 
 12. Create a `users.yml` by copying `sample-users.yml` and adding all your students:
